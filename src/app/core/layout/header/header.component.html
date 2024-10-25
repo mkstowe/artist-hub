@@ -1,1 +1,66 @@
-<p>header works!</p>
+<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <h1>
+      <a class="btn btn-ghost text-3xl">ArtistHub</a>
+    </h1>
+
+    <div class="search-bar px-6 w-96">
+      <div class="form-control">
+        <input
+          type="text"
+          placeholder="Search"
+          class="input input-bordered w-24 md:w-auto"
+        />
+      </div>
+    </div>
+
+    <nav>
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <details>
+            <summary>Categories</summary>
+            <ul class="bg-base-100 rounded-t-none p-2">
+              <li><a>Drawing</a></li>
+              <li><a>Painting</a></li>
+              <li><a>Sculpture</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Events</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="user-actions flex gap-2">
+    <button class="notifications-btn btn btn-circle btn-ghost">
+      <ng-icon name="jamBell"></ng-icon>
+    </button>
+    <button class="favorites-btn btn btn-ghost btn-circle">
+      <ng-icon name="jamHeart"></ng-icon>
+    </button>
+    <div class="user-details flex-none gap-2 pl-2">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+          <div class="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://wkypoqcxtmanykjyofpm.supabase.co/storage/v1/object/sign/user-avatars/demo/me.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ1c2VyLWF2YXRhcnMvZGVtby9tZS5qcGciLCJpYXQiOjE3Mjk4MjI2NDUsImV4cCI6MTc2MTM1ODY0NX0.hFI-Bx3I7d8DaNrjy9W9HU2BD2cFPc-0B1VY_l70FmI&t=2024-10-25T02%3A17%3A25.570Z"
+            />
+          </div>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+        >
+          <li>
+            <a class="justify-between">
+              Profile
+              <span class="badge">New</span>
+            </a>
+          </li>
+          <li><a>Settings</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
